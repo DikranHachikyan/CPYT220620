@@ -2,8 +2,6 @@
 
 # 1 + 2 + 3 + ... + n
 
-
-
 if __name__ == '__main__':
 
     pow_xy = lambda x,y : x ** y
