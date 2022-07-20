@@ -82,5 +82,12 @@ class Point():
         Point.count -= 1
         print(f'object {self} destroyed {Point.count}')
 
+    # class method <> static method
+    @classmethod
+    def from_point(cls, p):
+        if not isinstance(p, cls):
+            raise TypeError(f'Object must be of type Point')
+        return cls( x=p.x, y=p.y )
+
 if __name__ == '__main__':
     pass
